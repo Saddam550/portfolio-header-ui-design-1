@@ -1,0 +1,259 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  scroll-behavior: smooth;
+}
+
+.menuArea {
+  display: flex;
+  justify-content: space-between;
+  margin: 1px 56px;
+  align-items: center;
+  height: 100%;
+}
+
+.menu {
+  background: black;
+  margin: -1px 0;
+  box-shadow: 0px -1px 8px 2px #ffffff56;
+  position: relative;
+  height: 50px;
+}
+.menuItem {
+  background: black;
+}
+
+ul.item {
+  display: flex;
+  justify-content: flex-end;
+}
+ul.item li {
+  list-style: none;
+  display: inline-block;
+}
+ul.item li {
+  position: relative;
+  height: 20px;
+}
+ul.item li a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 23px;
+  font-size: 16px;
+  font-family: sans-serif;
+  letter-spacing: 1.001px;
+  margin: 0px 1px;
+  position: relative;
+  z-index: 2;
+  text-transform: capitalize;
+}
+
+.logo {
+  color: white;
+  font-family: fantasy;
+}
+ul.item li:hover {
+  transition: all 0.2s;
+  border-bottom: 20px solid hotpink;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+ul.item li a:hover {
+  transition: all 0.2s;
+  color: rgb(255, 255, 255);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.ThemeMode {
+  width: 33px;
+  margin: 0px 1px 1px 25px;
+  height: 17px;
+  display: inline-block;
+  background: rgb(255, 255, 255);
+
+  border-radius: 22px;
+  position: relative;
+}
+.mode {
+  content: '';
+  width: 49%;
+  height: 90%;
+  position: absolute;
+  background: #000000;
+  border-radius: 100%;
+  cursor: pointer;
+  top: 5%;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.themesChange .ThemeMode {
+  background: black;
+}
+
+.themesChange .mode {
+  width: 49%;
+  height: 90%;
+  margin: 0 17px;
+  background: rgb(255, 255, 255) !important;
+}
+.sliders {
+  height: 536px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(-199.5deg, rgb(0, 0, 0) 51%, rgb(24, 26, 27) -5%);
+  height: 100%;
+  justify-content: center;
+}
+.abouts {
+  color: white;
+  text-transform: capitalize;
+  text-align: justify;
+  font-family: system-ui;
+  filter: drop-shadow(0px 0px 1px black);
+  -webkit-filter: drop-shadow(0px 0px 1px black);
+}
+.imgarea {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  background-color: white !important;
+  overflow: hidden;
+}
+
+.imgarea img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  filter: drop-shadow(2px 4px 6px #00000080);
+  -webkit-filter: drop-shadow(2px 4px 6px #00000080);
+}
+
+.mydetilst {
+  padding: 30px;
+  width: 430px;
+  margin-left: 99px;
+}
+
+.nameArea {
+  display: flex;
+  align-items: center;
+  font-size: 27px;
+  height: 64px;
+}
+#dynamicChange {
+  margin-top: 7px;
+  margin-left: 4px;
+  color: hotpink;
+  text-transform: uppercase;
+  border-right: 1px solid red;
+  padding-right: 4px;
+  display: inline;
+}
+
+.stopBlinking {
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  animation: dynamic 2s infinite;
+  -webkit-animation: dynamic 2s infinite;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+}
+@keyframes dynamic {
+  100% {
+    width: auto;
+  }
+}
+
+.mydetilst .nameArea p {
+  /* font-size: 20px; */
+  color: white;
+
+  font-family: system-ui;
+}
+.mydetilst .iconArea ul.icon {
+  margin: 20px 0;
+}
+.mydetilst .iconArea ul.icon li {
+  list-style: none;
+  display: inline-block;
+}
+
+.mydetilst .iconArea ul.icon li a {
+  padding: 7px;
+  border: 1px solid hotpink;
+  border-radius: 200px;
+  margin-right: 8px;
+  color: hotpink;
+}
+.mydetilst .iconArea ul.icon li a:hover {
+  background: hotpink;
+  color: white;
+}
+
+.themesChange .menu {
+  box-shadow: 0px -1px 8px 2px #000000af;
+}
+
+.themesChange .menu,
+.themesChange .menu .menuArea,
+.themesChange .menu .menuArea .logo,
+.themesChange .menu .menuArea .item,
+.themesChange .menu .menuArea .item li,
+.themesChange .menu .menuArea .item li a {
+  color: black !important;
+  background: white !important;
+}
+
+.themesChange .sliders,
+.themesChange .sliders .slider .imgarea,
+.themesChange .sliders .slider .mydetilst,
+.themesChange .sliders .slider .mydetilst .nameArea,
+.themesChange .sliders .slider .mydetilst .nameArea p,
+.themesChange .sliders .slider .mydetilst .abouts {
+  color: black !important;
+  /* background: white !important; */
+}
+
+.themesChange .menu .menuArea .item li a:hover {
+  transition: all 0.2s;
+  color: rgb(255, 0, 128) !important;
+}
+.themesChange ul.item li:hover {
+  transition: all 0.2s;
+  border-bottom: 1px solid hotpink;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+.themesChange .sliders .slider .imgarea {
+  background: rgb(0, 0, 0) !important;
+}
+.themesChange .sliders .slider .mydetilst .abouts {
+  color: black !important;
+
+  filter: none;
+  -webkit-filter: none;
+}
+.themesChange .sliders .slider {
+  background: linear-gradient(
+    -199.5deg,
+    rgb(192 192 192) 51%,
+    rgb(240 240 240) -5%
+  );
+}

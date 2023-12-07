@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfollo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-examplehash"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="themeColor">
+    <main>
+      <header>
+        <div class="menu">
+          <div class="menuArea">
+            <div class="logo">LOGO</div>
+            <div class="menuItem">
+              <ul class="item">
+                <li><a href="#">home</a></li>
+
+                <li><a href="#">about</a></li>
+                <li><a href="#">skills</a></li>
+                <li><a href="#">portfollo</a></li>
+                <li><a href="#">contact</a></li>
+                <!-- <div class="ThemeMode">
+                  <div class="mode"></div>
+                </div> -->
+
+                <label class="ui-switch">
+                  <input type="checkbox" onclick="toggles()" />
+                  <div class="slider">
+                    <div class="circle"></div>
+                  </div>
+                </label>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="sliders">
+          <div class="slider" style="width: 100%; border-radius: 0%">
+            <div class="imgarea wow bounceInLeft">
+              <img src="img/saddam.png" alt="saddam.png" />
+            </div>
+            <div class="mydetilst wow bounceInRight">
+              <div class="nameArea">
+                <p>l'm a</p>
+                <div id="dynamicChange"></div>
+              </div>
+
+              <div class="abouts">
+                my name is saddam hossen I am a professional web developer and
+                WordPress expert. I'm looking for a remote job. My skill is HTML
+                CSS JavaScript react PHP MySQL and WordPress expert. So if you
+                need a web developer in your work or in your company, you can
+                hire me
+              </div>
+              <div class="iconArea">
+                <ul class="icon">
+                  <li>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href=""> <i class="fa-brands fa-github"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/e50ce840fa.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/wow.min.js"></script>
+    <script src="js/js.js"></script>
+    <script>
+      wow = new WOW({
+        animateClass: 'animated',
+        offset: 100,
+        callback: function (box) {
+          console.log('WOW: animating <' + box.tagName.toLowerCase() + '>')
+        },
+      })
+      wow.init()
+      document.getElementById('moar').onclick = function () {
+        var section = document.createElement('section')
+        section.className = 'section--purple wow fadeInDown'
+        this.parentNode.insertBefore(section, this)
+      }
+    </script>
+  </body>
+</html>
