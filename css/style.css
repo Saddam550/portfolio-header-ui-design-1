@@ -194,11 +194,15 @@ ul.item li a:hover {
 }
 
 .mydetilst .iconArea ul.icon li a {
-  padding: 7px;
-  border: 1px solid hotpink;
-  border-radius: 200px;
-  margin-right: 8px;
-  color: hotpink;
+     width: 32px;
+    padding: 7px;
+    border: 1px solid hotpink;
+    border-radius: 200px;
+    margin-right: 8px;
+    color: hotpink;
+    display: block;
+    height: 32px;
+}
 }
 .mydetilst .iconArea ul.icon li a:hover {
   background: hotpink;
